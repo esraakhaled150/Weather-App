@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CRUD System</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="App-container">
+  <div class="container px-2 py-5 text-center">
+    <!-- Search input-->
+     <input type="text" class=" w-100 mx-auto rounded-5 py-3 px-4 mb-5  bg-main-color text-white"
+     placeholder="Find your location..." id="Search">
+
+
+     <div class="row g-0">
+      <!-- Today data section-->
+       <div class="col-md-4 item  bg-main-color m-0 rounded-4">
+        <div class="d-flex justify-content-between py-2 px-3 bg-sec-color text-light rounded-start" id="today_date">
+          <p id="today_date_day_name" class=" my-auto fw-bolder">Sunday</p>
+          <span>
+            <span id="today_date_day_number" class="my-auto fw-bolder">30</span>
+            <span id="Today_date_month" class="my-auto fw-bolder">May</span>
+          </span>
+        </div>
+         <div class="item-content text-start px-3 py-3 bg-main-color text-light rounded-start" id="today">
+          <p id="today_location" class="fs-4">Cairo</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="fs-2 fw-bolder">
+            <span id="today_temp">20</span>
+            <span> <sup>O</sup> C</span>
+           </span>
+           <img  id="today_condition_img" src="images/sunny.png"height="40px" width="40px" alt="">
+          </div>
+          <p id="today_condition_text" class="fs-6 text-info fw-bolder">sunny</p>
+         </div>
+
+        <div class="item-footer d-flex text-light p-3">
+          <div class="d-flex me-4"> 
+            <img src="images/icons8-umbrella-50.png" alt="" height="30px" width="30px" class="footer-icons me-2">
+            <p id="humidity">20</p>
+          </div>
+
+          <div class="d-flex me-4">
+            <img src="images/icons8-wind-symbol-48.png" alt="" height="30px" width="30px" class="footer-icons me-2">
+            <p id="wind">80 km/h</p>
+          </div>
+
+          <div class="d-flex me-4">
+            <img src="images/icons8-compass-24.png" alt="" height="30px" width="30px" class="footer-icons me-2" >
+            <p id="wind-direction">NNE</p>
+          </div>
+        </div>
+   
+       </div>
+
+       <!-- Tomorrow data section-->
+       <div class="col-md-4 item bg-sec-color rounded-4">
+        <div class="py-2 text-center bg-sec-color text-light" id="tomorrow-date">
+          <p class="next_day_name my-auto fw-bolder"> Friyday</p>
+        </div>
+        <div class="item-content text-start text-light p-3 text-center pt-5" id="tomorrow">
+          <img class="next_condition_img" src="images/icons8-sunny-50.png" alt="">
+          <h3>
+            <span class="next_max_temp"></span>
+            <span> <sup>O</sup>C</span>
+          </h3>
+          <h5 class="text-whit py-3">
+            <span class="next_min_temp">15</span>
+            <span> <sup>O</sup>C</span>
+
+          </h5>
+          <p class="next_text_condition fs-6 text-info fw-bolder"> partly cloudy</p>
+        </div>
+       </div>
+
+
+       <!-- After tomorrow data section-->
+
+       <div class="col-md-4 item bg-main-color m-0 rounded-4">
+        <div class="py-2 text-center bg-sec-color text-light" id="tomorrow-date">
+          <p class="next_day_name my-auto fw-bolder"> Friyday</p>
+        </div>
+        <div class="item-content text-start text-light p-3 text-center pt-5" id="tomorrow">
+          <img class="next_condition_img" src="images/icons8-sunny-50.png" alt="">
+          <h3>
+            <span class="next_max_temp"></span>
+            <span> <sup>O</sup>C</span>
+          </h3>
+          <h5 class="text-whit py-3">
+            <span class="next_min_temp">15</span>
+            <span> <sup>O</sup>C</span>
+
+          </h5>
+          <p class="next_text_condition fs-6 text-info fw-bolder"> partly cloudy</p>
+        </div>
+       </div>
+
+     </div>
+  </div>
+ </div>
+
+ 
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+:root{
+    --main-color:#213045;
+    --sec-color: #3d3c3c;
+}
+
+.bg-main-color{
+    background-color:var(--main-color);
+    
+}
+
+
+
+
+.bg-sec-color{
+    background-color: var(--sec-color);
+}
+
+body{
+    background-image: url(/images/nature-mountains-cliff-rock-wallpaper-preview.jpg);
+    background-size: cover;
+}
+
